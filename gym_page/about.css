@@ -1,0 +1,300 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family :Arial, Helvetica, sans-serif;
+}
+.navbar-brand{
+    font-family:'Times New Roman', Times, serif;
+    text-transform: uppercase;
+}
+.nav-link:hover {
+  background-color: white;
+  border-radius : 8px;
+}
+.nav-link{
+    margin : 0.4em;
+    transition : 0.1s;
+}
+.header{
+    height : 8vh;
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+}
+.two{
+    display : flex;
+    justify-content: space-around;
+    background-color: rgb(187, 183, 183);
+    width: 70vw;
+}
+
+.header-left{
+    display : flex;
+    padding : 1em;
+}
+.header-right i{
+  margin-right : 1em;
+  font-size : 1.5em;
+  margin-bottom: 0.1em;   
+}
+.header-right{
+    padding: 1em;
+}
+.header-left i{
+  color : orangered;
+}
+.header-left p{
+    margin-right : 3em;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 930px)
+{
+    .header{
+        display: none;
+    }
+    .body-image{
+        height: 100vh;
+    }
+}
+
+.body-image{
+    height : 75vh;
+    width : 100vw;
+    background-image: url("dumbbell.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.9;
+} 
+
+.body-content{
+    display : flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items : center;
+    height: 68vh;
+    width : min(80%, 85vw);
+    margin : auto;
+}
+.about-us h1{
+    color : white;
+    font-size: 3rem;
+    font-weight : 900;
+    -webkit-text-stroke: 2px black;
+    text-align: center;
+}
+.button{
+    border-radius : 0.5em;
+    border : 2px black; 
+    padding : 1.5em 1.8em;
+    
+}
+
+.btn1{
+  background-color: orangered;
+  color : black;
+}
+.btn1:hover{
+    color : white;
+}
+
+@media screen and (max-width: 720px)
+{
+     h1{
+        font-size: 1em;
+    }
+    .button{
+        padding: 1em;
+    }
+}
+.radiobtn{
+    display: flex;
+    justify-content: center;
+}
+.radiobtn button{
+ padding: 0.5em;
+ border-radius : 1em;
+ margin: 0.1em;
+}
+.about{
+    display : flex;
+    width : 100vw;
+    justify-content: space-between;
+    margin : 1em;
+}
+.about-left img{
+    width : 35vw;
+    height : 80vh;
+    margin : 1em;
+}
+.about-right{
+  width : 60vw;
+  height : 80vh;
+  display : flex;
+  flex-direction : column;
+}
+.right-top h3{
+    font-weight : 500;
+    color : orangered;
+    font-size : clamp(1rem, 1.2rem, 1.6rem);
+}
+.right-top p{
+    font-weight : bold;
+    font-size : clamp (1rem, 1.4rem, 1.6rem);
+}
+.right-bottom{
+    background-color: black;
+    color : orangered;
+    height : 40vh;
+    width : min(98%, 60vw);
+    padding : 2em;
+}
+.right-top{
+    width : min(80%, 55vw);
+    height : 40vh;
+    /* margin-top : 2em; */
+}
+.right-bottom button{
+    padding : 1em 1.2em;
+    background: orangered;
+    border-radius : 1.2em;
+    margin: 1.5em 0;
+}
+@media screen and (max-width : 1030px)
+{
+    .about{
+        flex-direction : column;
+        margin : 1em;
+    }
+    .about-left img{
+        width : min(95%, 50vw);
+        height : 70vh;
+    }
+   .right-bottom{
+    height : min(95%, 85vh);
+    padding : 0.5em 0.1em;
+    width : 82vw;
+   }
+   .right-top{
+    height : 60vh;
+    width : 80vw;
+    /* margin: 5em 1em; */
+   }
+   .right-bottom button{
+    padding : 0.2em;
+    margin : 0.1em;
+   }
+}
+
+.threebox{
+    display : flex;
+    justify-content: space-between;
+    align-items: center;
+    width : 100vw;
+    background: black;
+}
+.box{
+    background-color : rgb(197, 188, 188);
+    width : min(30%, 30vw);
+    height : 45vh;
+    padding : 1em 0.5em;
+    margin : 2rem 0.3rem;
+
+}
+.box i{
+    font-size : 3em;
+    text-align: center;
+    color : orangered;
+    width : 100%;
+}
+.box h5{
+    font-size: clamp(1em, 2.5vw, 1.5em);
+    font-weight : 200;
+}
+.box h3{
+ text-align: center;
+ font-size: clamp(1.3em, 3.5vw, 2em);
+ font-weight : 600;
+}
+.box p{
+    color : orangered;
+    font-weight : 100;
+    font-size : clamp(1em, 2.8vw, 1.5em);
+}
+@media screen and (max-width: 680px)
+{
+    .threebox{
+        flex-direction: column;
+        margin-top: 3em;
+       
+    }
+    .box{
+        width : min(80%, 82vw);
+        margin-top : 3em;
+    }
+}
+
+.offer{
+    display : flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content : center;
+    height : 40vh;
+    background-color: black;
+}
+.offer h2{
+    font-weight : 600;
+    color: white;
+    font-size : clamp(1.2em, 2.5vw, 2.5em);
+}
+.offer button{
+    background-color: orangered;
+    color :rgb(187, 183, 183);
+}
+.expert-trainers{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    margin: 1em;
+}
+.expert-trainers img{
+    width: 30vw;
+    height : 60vh;
+    transition: 1s;
+}
+.expert-trainers img:hover{
+  opacity: 0.8;
+  transform: scale(1.1);
+}
+.expert-trainers p {
+    text-align: center;
+    position : relative;
+    bottom : 180px;
+    color : white;
+}
+.expert-trainers .fab{
+    font-size : clamp(1.2em, 3vw, 2em);
+    margin : 0.3em;
+    border-radius: 4em;
+    color: white;
+}
+.expert-trainers p{
+    display : none;
+}
+@media screen and (max-width: 600px)
+{
+    .expert-trainers{
+        flex-direction : column;
+        justify-content: space-between;
+    }
+    .expert-trainers img {
+        width : 80vw;
+        height : 70vh;
+        margin: 2em 1em;
+    }
+}

@@ -1,0 +1,121 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family :Arial, Helvetica, sans-serif;
+}
+.navbar-brand{
+    font-family:'Times New Roman', Times, serif;
+    text-transform: uppercase;
+}
+.nav-link:hover {
+  background-color: white;
+  border-radius : 8px;
+}
+.nav-link{
+    margin : 0.4em;
+    transition : 0.1s;
+}
+.header{
+    height : 8vh;
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+}
+.two{
+    display : flex;
+    justify-content: space-around;
+    background-color: rgb(187, 183, 183);
+    width: 70vw;
+}
+
+.header-left{
+    display : flex;
+    padding : 1em;
+}
+.header-right i{
+  margin-right : 1em;
+  font-size : 1.5em;
+  margin-bottom: 0.1em;   
+}
+.header-right{
+    padding: 1em;
+}
+.header-left i{
+  color : orangered;
+}
+.header-left p{
+    margin-right : 3em;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 930px)
+{
+    .header{
+        display: none;
+    }
+    .body-image{
+        height: 100vh;
+    }
+}
+
+.body-image{
+    height : 100vh;
+    width : 100vw;
+    background-image: url("dumbbell.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.9;
+} 
+
+.body-content{
+    display : flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items : center;
+    height: 68vh;
+    width : min(80%, 85vw);
+    margin : auto;
+}
+.about-us h1{
+    color : white;
+    font-size: 3rem;
+    font-weight : 900;
+    -webkit-text-stroke: 2px black
+}
+.button{
+    border-radius : 0.5em;
+    border : 2px black; 
+    padding : 1.5em 1.8em;
+    
+}
+
+.btn1{
+  background-color: orangered;
+  color : black;
+}
+.btn1:hover{
+    color : white;
+}
+
+@media screen and (max-width: 720px)
+{
+    .about-us h1{
+        font-size: 2rem;
+    }
+    .button{
+        padding: 1em;
+    }
+}
+.radiobtn{
+    display: flex;
+    justify-content: center;
+}
+.radiobtn button{
+ padding: 0.5em;
+ border-radius : 1em;
+ margin: 0.1em;
+}
